@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Contact - H. Chase Stevens</title>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<!--#include virtual="/bitp_script.html" -->
+<!--#include virtual="/analytics_script.html" -->
+</head>
+<body>
+<!--#include virtual="/header.html" -->
+<div class="contact_info"> 
+<strong>email:</strong> <a href="mailto:chase@chasestevens.com">chase@chasestevens.com</a><br />
+<strong>aim:</strong> <a href="aim:GoIm?screenname=hchasestevens@gmail.com">hchasestevens@gmail.com</a><br />
+<strong>gtalk:</strong> hchasestevens@gmail.com<br />
+<strong>skype:</strong> hchasestevens<br />
+<strong>google+:</strong> <a href="http://plus.google.com/103927236717396636563/">plus.google.com/103927236717396636563</a><br />
+<strong>facebook:</strong> <a href="http://facebook.com/hchasestevens">facebook.com/hchasestevens</a><br />
+<strong>github:</strong> <a 
+href="https://github.com/hchasestevens">github.com/hchasestevens</a><br />
+<strong>linkedin:</strong> <a href="http://uk.linkedin.com/pub/chase-stevens/6a/839/537/">linkedin.com/pub/chase-stevens/6a/839/537/</a>
+</div>
+</body>
+</html>

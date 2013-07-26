@@ -1,0 +1,716 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 12">
+<link id=Main-File rel=Main-File href="ai_actions.htm">
+<link rel=File-List href="ai_actions_files/filelist.xml">
+</head>
+
+<body lang=en-US>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:6.5in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:1.9527in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:17.0pt'>Tutorial</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:0in;width:1.7444in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:gray'>Thursday,
+February 09, 2012</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:gray'>11:04 AM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.3111in;margin-left:0in;width:6.5in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>00000 - Seize
+Strategic location</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Find
+strat locs using current st.dev.</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Combine
+above with first-turn-calculated strat locs</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+any free:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+have free units:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Move
+free unit to strat loc</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+generalized &quot;make unit&quot;</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+none free:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+have free units:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance &gt; current win chance threshold </p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Remove
+units until win chance &lt; current win chance threshold, then send previous
+iteration to strat loc</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance &lt; current win chance threshold</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Goto
+generalized &quot;make unit&quot;</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+strat loc list is empty:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+current st.dev != 1:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>St.dev
+--</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+00000 - Seize Strategic location</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not reference contain chain reference to 00000:</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Goto
+00001 - Seize resource</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>00001 - Seize Metal</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Find
+resources</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+have free workers:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+free worker on resource:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Worker.build(resource_harvester)</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Determine
+most profitable resource</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Move
+closest free worker to that resource</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+10000 - Make worker</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>00010 - Attack
+Player 1</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Get
+player 1 cities on map</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+any player1 city accessible</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Determine
+closest player1 city</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance vs. city &gt; current win chance threshold</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Remove
+units until win chance &lt; current win chance threshold, then send previous
+iteration to player1city</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance &lt; current win chance threshold</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+generalized &quot;make unit&quot;</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Determine
+path of least resistance</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance vs. closest part of path &gt; current win chance
+threshold</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Remove
+units until win chance &lt; current win chance threshold, then send previous
+iteration to closest part of path</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance &lt; current win chance threshold</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+generalized &quot;make unit&quot;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>00011 - Attack
+Player 2</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+00010</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>00100 - Attack
+Player 3</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+00010</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>00101 - Attack
+strongest military</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Determine
+non-self player with strongest military</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+tie</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Choose
+random player from tie set</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+appropriate attack command (00010, 00011, 00100)</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+appropriate attack command (00010, 00011, 00100)</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>00110 - Attack
+strongest economy </p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+00101</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>00111 -Attack
+weakest military </p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+00101</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>01000 - Attack
+weakest economy</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+00101</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>01001 - Harass
+player 1</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Get
+player 1 resources on map</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+any player1 resource accessible</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Determine
+closest player1 resource</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance vs. resource &gt; current win chance threshold</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Remove
+units until win chance &lt; current win chance threshold, then send previous
+iteration to player1resource</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance &lt; current win chance threshold</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+generalized &quot;make unit&quot;</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Determine
+path of least resistance</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance vs. closest part of path &gt; current win chance
+threshold</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Remove
+units until win chance &lt; current win chance threshold, then send previous
+iteration to closest part of path</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+total free units win chance &lt; current win chance threshold</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+generalized &quot;make unit&quot;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>01010 - Harass
+player 2</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+01001</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>01011 - Harass
+player 3</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+01001</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>01100 - Harass
+strongest military</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Determine
+non-self player with strongest military</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+tie</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Choose
+random player from tie set</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+appropriate harass command (01001, 01010, 01011)</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+appropriate harass command (01001, 01010, 01011)</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>01101 - Harass
+strongest economy</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+01100</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>01110 - Harass
+weakest military</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+01100</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>01111 - Harass
+weakest economy</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+01100</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>10000 - Make worker</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+have sufficient resources</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Add
+worker to queue</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+free workers &amp;&amp; insufficient metal</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+00001</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Elif
+free workers &amp;&amp; insufficient upkeep</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+make power</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not reference contain chain reference to 10000:</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Goto
+11111</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>10001 - Make tank</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+have sufficient resources</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Add
+tank to queue</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Elif
+insufficient metal</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+00001</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+make power</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>10010 - Make air</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+10001</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>10011 - Make
+anti-air</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+10001</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>10100 - Fortify
+Strategic Location</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Get
+units set to hold strat loc</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+above empty:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+00000*</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Find
+most vulnerable from above</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+!has fortress:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>If
+free workers</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>If
+free worker on tile</p>
+
+<p style='margin:0in;margin-left:1.875in;font-family:Calibri;font-size:11.0pt'>Worker.build(fortress)</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:1.875in;font-family:Calibri;font-size:11.0pt'>Send
+closest free worker to stractloc</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Goto
+10000</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>If
+free units</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Send
+closest free unit to stratloc</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:1.5in;font-family:Calibri;font-size:11.0pt'>Generic
+make unit</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>10101 - Fortify
+Resource</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+10100 *Goto 00001</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>10110 - Fortify City</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>See
+10100 *Goto 11110</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>10111 - Clear Queue</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Clear
+queue</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not contain chain reference to 10111 </p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+11111</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>11000 - Combat % win
+change +10%</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Combat
+% win threshold *= 1.1</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not contain chain reference to 11000</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+11111</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>11001 - Combat % win
+change -10%</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Combat
+% win threshold *= .9</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not contain chain reference to 11001</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+11111</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>11010 - Combat % win
+reset</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Combat
+% win threshold reset to genome value</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not contain chain reference to 11010</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+11111</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>11011 - Turns left
+threshold +20%</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Turns
+left threshold *= 1.2</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not contain chain reference to 11011</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+11111</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>11100 - Turns left
+threshold -20%</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Turns
+left threshold *= .8</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not contain chain reference to 11100</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+11111</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>11101 - Turns left
+threshold reset</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Turns
+left threshold reset to genome value</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+default behavior does not contain chain reference to 11101</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+default behavior</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+11111</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>11110 - Create new
+city</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Find
+good city locations using map generation criteria</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Narrow
+down above by determining which locations are accessible</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Divide
+score of each above location by sqrt(dist_to_closest_AI_city)</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>City
+location = best overall score</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+have free workers:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+worker on optimal location:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Worker.build(city)</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Else:
+</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Get
+closest free worker to location</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>CloseWorker.moveto(optimal
+location)</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+10000 - Make worker</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>11111 - Do nothing</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Return
+NULL_ACTION</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>Generalized make
+unit -</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Choose
+randomly between 10001, 10010, and 10011</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>Make power plant:</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>If
+free worker &amp;&amp; worker not on metal:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>If
+have sufficient resources:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Worker.build(powerplant)</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:1.125in;font-family:Calibri;font-size:11.0pt'>Goto
+00001</p>
+
+<p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:11.0pt'>Else:</p>
+
+<p style='margin:0in;margin-left:.75in;font-family:Calibri;font-size:11.0pt'>Goto
+10000</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with Microsoft Office OneNote
+2007<br>
+One place for all your notes and information</p>
+
+</div>
+
+</body>
+
+</html>
+                                                                                                                                                                  

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.chasestevens.com/index.shtml</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/schedule.shtml</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/resume.shtml</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/pubkey.shtml</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/contact.shtml</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=programming</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=code</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=python</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=philosophy</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=evolution</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=game%20design</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=video%20games</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=genetic%20algorithms</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=government</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=internet</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=d3</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=javascript</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=machine%20learning</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=web</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/read_post.php?time=1356663953</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/team2civ/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=stratloc</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/team2civ/ai_doc.html</loc>
+  <lastmod>2012-03-11T10:43:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/ai_actions.html</loc>
+  <lastmod>2012-03-19T10:30:51+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/read_post.php?time=1357477083</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=image%20processing</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=information%20theory</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=voting</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/index.php?limit=5</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/k-means/index.html</loc>
+  <lastmod>2013-03-22T11:56:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/resume.pdf</loc>
+  <lastmod>2013-02-26T10:45:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/resume_plaintext.shtml</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=programming&amp;limit=5</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=csv</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=filter</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=lambda</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=map</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=tkinter</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=%20lambda</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=%20math</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=%20programming</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=%20python</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=%20statistics</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=math</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=code&amp;limit=5</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=number%20theory</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=probability</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=metadata</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=mp3</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=music</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=tagging</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=python&amp;limit=5</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=value</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=education</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=examination</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=testing</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=tnsk</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=contract%20theory</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=contractualism</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=error%20theory</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=morality</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=rawls</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=scanlon</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=anonymity</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=democracy</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=ethics</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=game%20theory</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=gaming</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=society</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=united%20states</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=akrasia</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=desire</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=frankfurt</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=hedonism</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=holton</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=pruss</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=the%20good</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=will</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=color</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=design</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=web%20design</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=civilization</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=futurism</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/team2civ/ai_actions.html</loc>
+  <lastmod>2012-03-19T10:31:01+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/index.php?limit=0</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/index.php?limit=10</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=jwplayer</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=xmas</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=xml</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=programming&amp;limit=0</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=programming&amp;limit=10</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=algorithms</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=humor</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=sleep%20sort</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=code&amp;limit=0</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=haskell</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=python&amp;limit=0</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/index.php?limit=15</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/index.php?limit=20</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=first</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.chasestevens.com/blog/blog_tag_search.php?tag=hello%20world</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.26</priority>
+</url>
+</urlset>

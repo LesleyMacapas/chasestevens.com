@@ -1,0 +1,96 @@
+Welcome to TurtleGraph v1.2.2!
+
+Operational instructions for Classic Mode:
+
+1. Enter a function. This should look (for example) like "x / 2 + 7". Available
+   operators are +, -, *, /, ^ and/or **, and % (modulo). Parentheses function 
+   as expected. Available functions are sqrt, cos, sin, tan, acos, asin, atan, 
+   radians, and degrees.
+2. Enter the minimum and maximum limits (x values) for which the function is to
+   be evaluated.
+3. Press the Graph button to graph the function.
+4. (Optional) Press the Reset button in order to clear the graph window of the 
+   results of any previous functions and scale the graph to the xmin and xmax 
+   values. Note: This will also close the output window.
+5. (Optional) Check the "Show Output" checkbox to show the realtime output of
+   the graphing.
+
+Operational instructions for Physics Mode:
+
+1. Enter the magnitude of the projectile, in meters per second.
+2. Enter the angle of the projectile. Please refrain from entering values above
+   90 or below -90.
+3. Enter the origin of the projectile in the format "x,y". 
+4. Enter the number of seconds for which you'd like the projectile's motion to 
+   be plotted, in seconds. Please note that calculation of the projectile's 
+   motion will halt should the projectile come into contact with the x axis. 
+   The default value is 100 seconds.
+5. Enter the acceleration due to gravity in meters per second per second. The 
+   default value is -9.8 meters per second per second.
+6. Press the Graph button the graph the motion of the projectile.
+7. (Optional) Press the Reset button in order to clear the graph window of the 
+   results of any previous projectiles. Note: This will also close the output
+   window.
+8. (Optional) Check the "Show Output" checkbox to show the realtime output of
+   the graphing.
+
+The Menubar:
+   
+   Save:
+      Save Output: 
+         This will save the text output of your graphing session as a .txt 
+         file.
+      Save Graph:  
+         This will save the graphical output of your session as a .png file.
+
+   Mode:
+      Use this menu to switch between Physics and Classic mode. Data will not 
+      be preserved.
+
+   Help:
+      Displays the help file you are currently viewing.
+
+   Quit:
+      Exits the program.
+
+Troubleshooting:
+
+   Help File Error:
+      This error may be caused by a missing, moved or corrupt help file. Please
+      repair or replace the help file or, failing that, reinstall TurtleGraph.
+   
+   Angle Error:
+      This error may be caused by entering a number or statement that evaluates
+      to greater than 90 degrees or less than -90 degrees. Please choose a 
+      number within the 90 to -90 degree range to solve this issue.
+
+   Zero Divison Error:
+      Part of your function required the program to divide by zero. Altering 
+      the denominators of any fractions or changing the minimum and maximum x
+      values may resolve this error.
+
+   Integer Error:
+      An invalid, non-integer number or numbers were entered for either the 
+      minimum or maximum x values (or both). Entering integers for both these 
+      fields may resolve the issue.
+
+   Syntax Error:
+      Your function contained invalid syntax. Please refer to the operational 
+      instructions for Classic Mode above for a complete list of allowed 
+      operations and functions.
+	  
+   Implied Multiplication Error:
+      Your function contained invalid implied multiplication (e.g. "3x" as 
+      opposed to "3 * x". Please replace all instances of invalid implied 
+      multiplication and try again.
+   
+   Function does not appear as expected:
+      There are a number of possible reasons for this. Make sure the function
+      properly follows PEMDAS, and that the function is free of syntax errors
+      or invalid implied multiplication.
+
+TurtleGraph was created for The New School in Kennebunk, Maine by Chase 
+Stevens. Contact chase@chasestevens.com for questions, comments and concerns. 
+Copyright (c) Chase Stevens 2011. All Rights Reserved.
+
+

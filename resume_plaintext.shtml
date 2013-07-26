@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Plaintext R&eacute;sum&eacute; - H. Chase Stevens</title>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link rel="canonical" href="http://www.chasestevens.com/resume.html">
+<!--#include virtual="/bitp_script.html" -->
+<!--#include virtual="/analytics_script.html" -->
+</head>
+<body>
+<!--#include virtual="/header.html" -->
+<div style="margin:auto;width:60%">
+<span style="display:inline-block;"><pre style="overflow:auto;width:750px;max-width:750px;white-space:pre-wrap;">
+<!--#include virtual="/Resume_plaintext_version.txt" -->
+</pre></span></div>
+</body>
+</html>

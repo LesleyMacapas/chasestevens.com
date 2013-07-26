@@ -1,0 +1,126 @@
+/* CSS Document */
+body {
+	font-family: Palatino Linotype, Book Antiqua;
+	font-size: 13px;
+	}
+p {
+	font-size:16px;
+	text-align:center;
+	}
+div.contact_info {
+	font-size:16px;
+	width:500px;
+	position:relative;
+	left:50%;
+	margin-left:-250px
+	}
+div.team2civ {
+	font-size:16px;
+	width:750px;
+	position:relative;
+	left:50%;
+	margin-left:-375px
+	}
+div.blog_wrapper {
+	width:99%;
+	position:absolute;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+div.blog_post_container {
+	font-size:16px;
+	width:72%;
+	float:left;
+	position:relative;
+	margin-bottom:0px;
+	}
+div.blog_post_container h1 {
+	position:relative;
+	margin-top:0px;
+	font-size:1.75em
+	}
+div.blog_sidebar {
+	width:25%;
+	float:right;
+	background:#E8E8E8;
+	position:relative;
+	border-style:solid;
+	border-width:10px;
+	border-radius:5px;
+	border-color:#E8E8E8;
+	}
+div.blog_sidebar h2 {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+div.blog_sidebar ol {
+	font-size:14px
+}
+div.blog_post {
+	background:#E8E8E8;
+	position:relative;
+	margin-bottom:50px;
+	border-style:solid;
+	border-width:10px;
+	border-radius:5px;
+	border-color:#E8E8E8;
+	}
+div.blog_post pre {
+	font-size:12px;
+	background:#E8E8E8;
+	}
+div.blog_post h2 {
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+div.blog_post h2 a:link {
+	text-decoration:none;
+	color:black;
+	}
+div.blog_post h2 a:visited {
+	text-decoration:none;
+	color:black;
+	}
+div.blog_post h2 a:active {
+	text-decoration:none;
+	color:black;
+}
+div.blog_post h2 a:hover {
+	text-decoration:underline;
+	color:DimGrey;
+}
+div.blog_post h3 {
+	font-style:italic;
+	font-size:14px;
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+div.blog_post p {
+	max-width:100%;
+	text-align:left;
+	position:relative;
+	margin-top:32px;
+	}
+div.blog_post img {
+	border-width:3px;
+	border-style:solid;
+	border-color:white;
+	}
+div.blog_post blockquote {
+	background-color:#DCDCFF;
+	font-family:georgia;
+	color:#4A4A4A;
+	border-width:3px;
+	border-radius:3px;
+	border-style:solid;
+	border-color:#DCDCFF;
+	font-weight:bold;
+	}
+div.blog_footer {
+	clear:both;
+	margin-bottom:20px;
+	}
+a.author {
+	color: black;
+	text-decoration: none;
+}

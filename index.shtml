@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>H. Chase Stevens</title>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<!--#include virtual="/analytics_script.html" -->
+</head>
+<body>
+<center>
+<br /><br /><br /><br /><br /><br />
+<img src="logo.png" alt="H. Chase Stevens Logo">
+<br />
+<br />
+<table border="0" cellpadding="12">
+<tr>
+	<td><a href="/blog/">blog</a></td>
+	<td><strong>&middot;</strong></td>
+	<td><a href="schedule.shtml">schedule</a></td>
+	<td><strong>&middot;</strong></td>
+	<td><a href="resume.shtml">r&eacute;sum&eacute;</a></td>
+	<td><strong>&middot;</strong></td>
+	<td><a href="pubkey.shtml">public key</a></td>
+	<td><strong>&middot;</strong></td>
+	<td><a href="contact.shtml">contact</a></td>
+</tr>
+</table>
+</center>
+</body>
+</html>

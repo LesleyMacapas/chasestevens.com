@@ -1,0 +1,792 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.3  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Chase Stevens">
+	<META NAME="CREATED" CONTENT="20120311;9265110">
+	<META NAME="CHANGEDBY" CONTENT="Chase Stevens">
+	<META NAME="CHANGED" CONTENT="20120311;10074341">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 0.79in }
+		P { margin-bottom: 0.08in }
+		TD P { margin-bottom: 0in }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P STYLE="margin-bottom: 0in"><B>Structure of the genome: </B>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	Every
+genome is comprised of a number of tolerance bits (as
+represented by booleans), followed by a number of action
+bits. 5 action bits encode one action. There are a
+fixed number of actions for each possible permutation
+of environmental conditions (as discussed below), which
+is referred to as the number of action points.</SPAN></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	</SPAN><B>Threshold
+bits:</B></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER><B>Bit index</B></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER><B>Usage</B></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="0" SDNUM="1033;">
+			<P ALIGN=CENTER>0</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Strategic location st.dev. tolerance (1/2)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="1" SDNUM="1033;">
+			<P ALIGN=CENTER>1</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Strategic location st.dev. tolerance (2/2)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="2" SDNUM="1033;">
+			<P ALIGN=CENTER>2</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Combat win chance tolerance (1/4)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="3" SDNUM="1033;">
+			<P ALIGN=CENTER>3</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Combat win chance tolerance (2/4)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="4" SDNUM="1033;">
+			<P ALIGN=CENTER>4</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Combat win chance tolerance (3/4)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="5" SDNUM="1033;">
+			<P ALIGN=CENTER>5</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Combat win chance tolerance (4/4)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="6" SDNUM="1033;">
+			<P ALIGN=CENTER>6</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Queue length tolerance (1/3)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="7" SDNUM="1033;">
+			<P ALIGN=CENTER>7</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Queue length tolerance (2/3)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="8" SDNUM="1033;">
+			<P ALIGN=CENTER>8</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Queue length tolerance (3/3)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="9" SDNUM="1033;">
+			<P ALIGN=CENTER>9</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Banked resources threshold (1/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="10" SDNUM="1033;">
+			<P ALIGN=CENTER>10</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Banked resources threshold (2/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="11" SDNUM="1033;">
+			<P ALIGN=CENTER>11</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Banked resources threshold (3/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="12" SDNUM="1033;">
+			<P ALIGN=CENTER>12</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Banked resources
+			threshold (4/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="13" SDNUM="1033;">
+			<P ALIGN=CENTER>13</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Banked resources
+			threshold (5/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="14" SDNUM="1033;">
+			<P ALIGN=CENTER>14</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Banked resources
+			threshold (6/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="15" SDNUM="1033;">
+			<P ALIGN=CENTER>15</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Turns left threshold
+			(1/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="16" SDNUM="1033;">
+			<P ALIGN=CENTER>16</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Turns left threshold
+			(2/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="17" SDNUM="1033;">
+			<P ALIGN=CENTER>17</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Turns left threshold
+			(3/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="18" SDNUM="1033;">
+			<P ALIGN=CENTER>18</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Turns left threshold
+			(4/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="19" SDNUM="1033;">
+			<P ALIGN=CENTER>19</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Turns left threshold
+			(5/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="20" SDNUM="1033;">
+			<P ALIGN=CENTER>20</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Turns left threshold
+			(6/6)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="21" SDNUM="1033;">
+			<P ALIGN=CENTER>21</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Default
+			action/behavior (1/5)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="22" SDNUM="1033;">
+			<P ALIGN=CENTER>22</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Default
+			action/behavior (2/5)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="23" SDNUM="1033;">
+			<P ALIGN=CENTER>23</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Default
+			action/behavior (3/5)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="24" SDNUM="1033;">
+			<P ALIGN=CENTER>24</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Default
+			action/behavior (4/5)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="25" SDNUM="1033;">
+			<P ALIGN=CENTER>25</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="font-weight: normal">Default
+			action/behavior (5/5)</P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	</SPAN><B>Action
+encodings:</B></P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">		</SPAN></P>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER><B>Binary code</B></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER><B>Action</B></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>00000</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Seize strategic location</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">00001</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Seize resource</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">00010</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attack player 1</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">00011</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attack player 2</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">00100</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attack player 3</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">00101</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attack strongest military</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">00110</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attack strongest economy</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">00111 
+			</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attack weakest military</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">01000</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attack weakest economy</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">01001</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Harass player 1</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">01010</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Harass player 2</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">01011</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Harass player 3</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">01100</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Harass strongest military</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">01101</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Harass strongest economy</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">01110</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Harass weakest military</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">01111</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Harass weakest economy</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">10000</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Make (queue) worker</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">10001</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Make (queue) tank</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">10010</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Make (queue) air</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">10011</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Make (queue) anti-air</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">10100</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Fortify strategic location</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">10101</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Fortify resource</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">10110</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Fortify city</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">10111</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Clear unit queue</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">11000</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Combat win chance tolerance +10%</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">11001</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Combat win chance tolerance -10%</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">11010</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Combat win chance tolerance reset to default</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">11011</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Turns left threshold -20%</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">11100</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Turns left threshold +20%</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">11101</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Turns left threshold reset to default</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">11110</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Create new city</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER STYLE="text-decoration: none">11111</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>No action</P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in"><B>	Environmental conditions:</B></P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	</SPAN></P>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER><B>Bit</B><SPAN STYLE="font-weight: normal"> </SPAN><B>index</B></P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER><B>Usage</B></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="0" SDNUM="1033;">
+			<P ALIGN=CENTER>0</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>AI economy ranking (1/2) 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="1" SDNUM="1033;">
+			<P ALIGN=CENTER>1</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>AI economy ranking (2/2)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="2" SDNUM="1033;">
+			<P ALIGN=CENTER>2</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>AI military ranking (1/2) 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="3" SDNUM="1033;">
+			<P ALIGN=CENTER>3</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>AI military ranking (2/2)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="4" SDNUM="1033;">
+			<P ALIGN=CENTER>4</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>AI strategic location ranking (1/2) 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="5" SDNUM="1033;">
+			<P ALIGN=CENTER>5</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>AI strategic location ranking (2/2)</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="6" SDNUM="1033;">
+			<P ALIGN=CENTER>6</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attacked by player 1?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="7" SDNUM="1033;">
+			<P ALIGN=CENTER>7</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attacked by player 2?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="8" SDNUM="1033;">
+			<P ALIGN=CENTER>8</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Attacked by player 3?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="9" SDNUM="1033;">
+			<P ALIGN=CENTER>9</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Lost mine last round?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="10" SDNUM="1033;">
+			<P ALIGN=CENTER>10</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Lost power plant last round?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="11" SDNUM="1033;">
+			<P ALIGN=CENTER>11</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Lost city last round?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="12" SDNUM="1033;">
+			<P ALIGN=CENTER>12</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Lost unit last round?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="13" SDNUM="1033;">
+			<P ALIGN=CENTER>13</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Built mine last round?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="14" SDNUM="1033;">
+			<P ALIGN=CENTER>14</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Built power plant last round?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="15" SDNUM="1033;">
+			<P ALIGN=CENTER>15</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Built city last round?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="16" SDNUM="1033;">
+			<P ALIGN=CENTER>16</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Units queued &gt; threshold?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="17" SDNUM="1033;">
+			<P ALIGN=CENTER>17</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Resources banked &gt; threshold?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="18" SDNUM="1033;">
+			<P ALIGN=CENTER>18</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Turns left &gt; threshold?</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="19" SDNUM="1033;">
+			<P ALIGN=CENTER>19</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Type of majority of global troops (1/2) 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=50% SDVAL="20" SDNUM="1033;">
+			<P ALIGN=CENTER>20</P>
+		</TD>
+		<TD WIDTH=50%>
+			<P ALIGN=CENTER>Type of majority of global troops (2/2)</P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">		These
+environment variables are fed to the AI each turn. The AI then
+converts this boolean array into an integer, which it uses to
+determine where in the genome to look for a set of responses (action
+codes) to perform during the turn.</SPAN></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><B>Calculating the strategic value of a
+tile</B></P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	</SPAN></P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	Strategic
+locations are tiles which, if held, give a player increased control
+over the map. The strategic value of a given tile may be calculated
+as being the difference between the sum of the lengths of the paths
+from every city to every other city and from every city to every
+resource currently, and the same sum should that tile be made
+inaccessible/removed from the map (in cases where some routes are rendered 
+impossible, this should count as an increase in distance of 500 tiles. The 
+AI is usually only 
+concerned with occupying strategic locations that are a number of standard
+deviations above the mean tile strategic value.</SPAN></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><B>Calculating the economic ranking of
+a player</B></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	A
+player's current economic ranking can be calculated by
+summing the number of resources that player is able to gain per turn
+from all their mines.</SPAN></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><B>Calculating the military strength of
+a player</B></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	A
+player's current military strength can be calculated by summing the
+number of resources the player has expended for each unit they
+currently have on the map.</SPAN></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><B>What do the action codes mean?</B></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: normal">	The
+implementations of each of the action codes can be found here:
+<A HREF="http://www.chasestevens.com/ai_actions.html">http://www.chasestevens.com/ai_actions.html</A>
+</SPAN>
+</P>
+</BODY>
+</HTML>

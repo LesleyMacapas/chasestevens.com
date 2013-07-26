@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>H. Chase Stevens</title>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<!--#include virtual="/bitp_script.html" -->
+<!--#include virtual="/analytics_script.html" -->
+<script type='text/javascript' src='jwplayer.js'></script>
+</head>
+<body>
+<!--#include virtual="/header.html" -->
+<div style="font-size:16px;width:500px;position:relative;left:50%;margin-left:-250px"> 
+<center><h2>Blonde Wand Wiffleball League Podcasts</h2><br /></center>
+<h3>Championship Game 2</h3>
+Date: June 9th, 2011<br />
+Teams: Dirty Wombats vs. Blazing Assholes<br />
+Commentators: Chase Stevens, Coalton Stacey<br />
+<embed
+		src="player.swf"
+		height=24
+		width=480
+		flashvars="file=http://res.chasestevens.com/wiffle/Championship_2.mp3&autostart=false&controlbar=bottom&duration=3342"
+/>
+<a href="Championship_2.mp3"><b>Download Podcast</b></a>
+<br />
+<h3>Championship Game 1</h3>
+Date: June 7th, 2011<br />
+Teams: Dirty Wombats vs. Blazing Assholes<br />
+Commentators: Chase Stevens, Christian Eaton<br />
+<embed
+		src="player.swf"
+		height=24
+		width=480
+		flashvars="file=http://res.chasestevens.com/wiffle/Championship_1.mp3&autostart=false&controlbar=bottom&duration=2732"
+/>
+<a href="Championship_1.mp3"><b>Download Podcast</b></a>
+<br />
+<h3>Series A Game 3</h3>
+Date: June 3rd, 2011<br />
+Teams: Blazing Assholes vs. Cavemen<br />
+Commentators: Chase Stevens, Landon Knittweis<br />
+<embed
+		src="player.swf"
+		height=24
+		width=480
+		flashvars="file=http://res.chasestevens.com/wiffle/Series_A_Game_3.mp3&autostart=false&controlbar=bottom&duration=2184"
+/>
+<a href="Series_A_Game_3.mp3"><b>Download Podcast</b></a>
+<br />
+<h3>Series A Game 2</h3>
+Date: June 2nd, 2011<br />
+Teams: Blazing Assholes vs. Cavemen<br />
+Commentators: Chase Stevens, Landon Knittweis<br />
+<embed
+		src="player.swf"
+		height=24
+		width=480
+		flashvars="file=http://res.chasestevens.com/wiffle/Series_A_Game_2.mp3&autostart=false&controlbar=bottom&duration=2370"
+/>
+<a href="Series_A_Game_2.mp3"><b>Download Podcast</b></a>
+<br />
+<h3>Series B Game 2</h3>
+Date: June 2nd, 2011<br />
+Teams: Dirty Wombats vs. Young $ Cash $<br />
+Commentators: Chase Stevens, Zach Pace, Kyle Grant<br />
+<embed
+		src="player.swf"
+		height=24
+		width=480
+		flashvars="file=http://res.chasestevens.com/wiffle/Series_B_Game_2.mp3&autostart=false&controlbar=bottom&duration=3582"
+/>
+<a href="Series_B_Game_2.mp3"><b>Download Podcast</b></a>
+<br />
+<h3>Series B Game 1</h3>
+Date: June 1st, 2011<br />
+Teams: Dirty Wombats vs. Young $ Cash $<br />
+Commentators: Chase Stevens, Zach Pace<br />
+<embed
+		src="player.swf"
+		height=24
+		width=480
+		flashvars="file=http://res.chasestevens.com/wiffle/Series_B_Game_1.mp3&autostart=false&controlbar=bottom&duration=3521"
+/>
+<a href="Series_B_Game_1.mp3"><b>Download Podcast</b></a>
+<br />
+<h3>Series A Game 1</h3>
+Date: May 31st, 2011<br />
+Teams: Blazing Assholes vs. Cavemen<br />
+Commentators: Chase Stevens, Landon Knittweis<br />
+<embed
+		src="player.swf"
+		height=24
+		width=480
+		flashvars="file=http://res.chasestevens.com/wiffle/Series_A_Game_1.mp3&autostart=false&controlbar=bottom&duration=2457"
+/>
+<a href="Series_A_Game_1.mp3"><b>Download Podcast</b></a>
+<br />
+</div>
+</body>
+</html>

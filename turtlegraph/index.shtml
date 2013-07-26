@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>H. Chase Stevens</title>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<!--#include virtual="/bitp_script.html" -->
+<!--#include virtual="/analytics_script.html" -->
+</head>
+<body>
+<!--#include virtual="/header.html" -->
+<div style="font-size:16px;width:500px;position:relative;left:50%;margin-left:-250px"> 
+<center><h2>TurtleGraph</h2><img src="turtico.png" /><br /><br /></center>
+TurtleGraph is a graphing application written in Python. It was designed for <a href="http://www.tnsk.org">The New School, Kennebunk</a> as a simple and easy-to-use replacement for a standard graphing calculator. Turtlegraph also functions as a basic kinematics simulator.<br />
+<br />
+<a href="turtlegraph_setup.exe">Download TurtleGraph (Windows XP+)</a>
+<br /><br />
+<a href="turtlegraph.py">Source (Python 2.5)</a>
+<br /><br />
+For discussion, notes, questions, suggestions and bug reports:<br />
+<a href="mailto:tgraph@chasestevens.com">tgraph@chasestevens.com</a>
+</div>
+</body>
+</html>

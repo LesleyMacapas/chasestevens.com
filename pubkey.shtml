@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Public Key - H. Chase Stevens</title>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<!--#include virtual="/bitp_script.html" -->
+<!--#include virtual="/analytics_script.html" -->
+</head>
+<body>
+<!--#include virtual="/header.html" -->
+<center>
+<p>
+<form name="form">
+<textarea name="post" rows="23" cols="64" 
+style="font-family:monospace"><!--#include virtual="/chase-pubkey" --></textarea>
+<br />
+<table border="0" cellpadding="12"><tr><td><a href="chase-pubkey">download</a></td><td><strong>&middot;</strong></td><td><a href="http://en.wikipedia.org/wiki/Public-key_cryptography">what is this?</a></td></tr></table>
+</form>
+</p>
+</center>
+</body>
+</html>

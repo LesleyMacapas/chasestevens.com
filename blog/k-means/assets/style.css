@@ -1,0 +1,25 @@
+body {
+  background: rgb(232, 232, 232);
+}
+
+svg {
+  background: #DCDCDC;
+}
+
+body {
+  font-family: Helvetica, Arial, sans;
+  padding: 20px;
+  margin: 0;
+}
+
+
+svg circle {
+  fill: #AAAAAA;
+  opacity: 0.85;
+}
+svg rect {
+  fill: #FF9D00;
+}
+svg path {
+  fill: #FF9D00;
+}

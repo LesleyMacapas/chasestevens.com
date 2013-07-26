@@ -1,0 +1,3 @@
+Turtlegraph v1.2.2 Changelog:
+-Fixed error wherein integer division with a remainder failed to produce a floating-point number.
+-Bugfix for new output window.

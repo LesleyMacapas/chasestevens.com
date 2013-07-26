@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>R&eacute;sum&eacute; - H. Chase Stevens</title>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<meta name="description" content="H. Chase Stevens' Resume">
+<meta name="keywords" content="resume, H. Chase Stevens, Chase Stevens, Hodgdon Chase Stevens, programming, programmer, CV, curriculum vitae, html, python, web design, web development, web developer, University of Edinburgh, Edinburgh, Maine, United States, United States of America, New England, United Kingdom, UK, USA, Scotland, developer, software, engineer, software developer, software development, software design, software engineer, linguistics, philosophy, tutor, Latin, German, math, mathematics, maths">
+<link href="/style.css" rel="stylesheet" type="text/css">
+<!--#include virtual="/bitp_script.html" -->
+<!--#include virtual="/analytics_script.html" -->
+</head>
+<body>
+<!--#include virtual="/header.html" -->
+<p>
+<embed src="resume.pdf" width=850 height=700 />
+<center><table border="0" cellpadding="12"><tr><td><a href="resume.pdf">download as .pdf</a></td><td><strong>&middot;</strong></td>
+<td><a href="https://github.com/hchasestevens/resume/blob/master/resume.tex">view .tex (github)</a></td><td><strong>&middot;</strong></td>
+<td><a href="resume_plaintext.shtml">plaintext version</a></td></tr></table></center>
+</p>
+</body>
+</html>
