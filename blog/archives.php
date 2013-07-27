@@ -56,7 +56,7 @@ echo "<div class='blog_post'>";
 echo "<h1>Archives</h1>";
 while ($row = mysql_fetch_array($post_result, MYSQL_ASSOC)) {
 	$url_title = strtolower(urlencode(stripslashes($row["title"])));
-    echo "<strong><a href='./read_post.php?title=" . $url_title . "&time=" . $row['time'] . "'>" . stripslashes($row['title']) . "</a></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(Posted " . date("F j, Y",$row["time"]) . ")</i>";
+	echo "<strong><a href='./read_post.php?title=" . $url_title . "&time=" . $row['time'] . "'>" . stripslashes($row['title']) . "</a></strong><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(Posted " . date("F j, Y",$row["time"]) . ")</i>";
 	echo "<br /><br />";
 }
 ?>

@@ -69,7 +69,7 @@ echo "</ol>";
 $result = mysql_query($post_query)
 	or die("Query error: " . mysql_error());
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-    printf("<div class=\"blog_post\"><h2>%s </h2><h3>posted on: %s by <a class='author' href='https://plus.google.com/103927236717396636563?rel=author'>Chase Stevens</a></h3><p>%s</p>", stripslashes($row["title"]), date("l, F j, Y (g:i a)",$row["time"]), stripslashes($row["content"]));
+	printf("<div class=\"blog_post\"><h2>%s </h2><h3>posted on: %s by <a class='author' href='https://plus.google.com/103927236717396636563?rel=author'>Chase Stevens</a></h3><p>%s</p>", stripslashes($row["title"]), date("l, F j, Y (g:i a)",$row["time"]), stripslashes($row["content"]));
 	$tag_query = "SELECT tag FROM `tags` WHERE time = " . $row["time"] . " ORDER BY (tag) ASC";
 	$tag_result = mysql_query($tag_query);
 	echo "Tags: <em>";
