@@ -52,22 +52,6 @@ $limit = mysql_real_escape_string($_GET['limit'],$link);
 if ($_GET['limit'] == '') {
 	$limit = 0;
 }
-$post_query = "SELECT * FROM `posts` ORDER BY (time) DESC LIMIT " . $limit . ",5";
-$result = mysql_query($post_query)
-	or die("Query error: " . mysql_error());
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-	$url_title = strtolower(urlencode(stripslashes($row["title"])));
-	printf("<div class=\"blog_post\"><h2><a href='http://blog.chasestevens.com/read_post.php?title=%s&time=%s'>%s </a></h2><h3>posted on: %s by <a class='author' href='https://plus.google.com/103927236717396636563?rel=author'>Chase Stevens</a></h3><p>%s</p>", $url_title, $row["time"], stripslashes($row["title"]), date("l, F j, Y (g:i a)",$row["time"]), stripslashes($row["content"]));
-	$tag_query = "SELECT tag FROM `tags` WHERE time = " . $row["time"] . " ORDER BY (tag) ASC";
-	$tag_result = mysql_query($tag_query);
-	echo "Tags: <em>";
-	$tag_list = "";
-	while ($tag = mysql_fetch_array($tag_result, MYSQL_ASSOC)) {
-		$tag_list = $tag_list . "<a href='/blog/blog_tag_search.php?tag=" . $tag['tag'] . "'>" . $tag['tag'] . "</a>, ";
-	}
-	echo substr($tag_list, 0, -2);
-	echo "</em></div>";
-}
 $next_page_query = "SELECT time FROM `posts` ORDER BY (time) DESC LIMIT " . ($limit+5) . ",1";
 $next_page_result = mysql_query($next_page_query);
 $more_results = False;
@@ -75,7 +59,7 @@ while ($result = mysql_fetch_array($next_page_result, MYSQL_ASSOC)){
 	$more_results = True;
 }
 $less_results = $limit > 0;
-$less_results_limit = max(($limit - 5), 0)
+$less_results_limit = max(($limit - 5), 0);
 ?>
 </div>
 <script src="populate_container.js" />

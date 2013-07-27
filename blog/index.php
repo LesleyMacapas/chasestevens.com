@@ -75,7 +75,7 @@ while ($result = mysql_fetch_array($next_page_result, MYSQL_ASSOC)){
 	$more_results = True;
 }
 $less_results = $limit > 0;
-$less_results_limit = max(($limit - 5), 0)
+$less_results_limit = max(($limit - 5), 0);
 ?>
 </div>
 <div class="blog_footer">
