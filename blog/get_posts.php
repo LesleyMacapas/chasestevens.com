@@ -15,5 +15,5 @@ $results = array();
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 	$results[] = $row['time'];
 }
-echo implode('\n',$results);
+echo implode(',',$results);
 ?>

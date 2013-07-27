@@ -7,6 +7,7 @@
     <RootNamespace>ChasePersonal</RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <IISProjectUrl>http://localhost:2430/</IISProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -26,6 +27,12 @@
     <Compile Include="api_documentation.html" />
     <Compile Include="BingSiteAuth.xml" />
     <Compile Include="blog\get_posts.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="blog\get_blog_post.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="blog\js_index.php">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="chase-pubkey" />
@@ -382,5 +389,10 @@
     <Folder Include="blog\k-means" />
     <Folder Include="blog\syntax_highlighter" />
     <Folder Include="blog\k-means\assets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="blog\populate_container.js">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
 </Project>

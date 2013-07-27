@@ -23,8 +23,8 @@ var stop_update = false;
 
 //@ http://jsfromhell.com/array/shuffle [v1.0]
 function shuffle(o){ //v1.0
-    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
+	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	return o;
 };
 
 function safeShuffle(o){
@@ -59,7 +59,7 @@ function getMousePosition(mp) {
 
 function capitalize(string)
 {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 function createCenters () {
@@ -80,8 +80,8 @@ function createCenters () {
 	.attr('r', radius)
 	.attr('style', function(d){return 'fill:' + d.color;})
 	.attr('class','center')
-   	.append("svg:title")
-   	.text(function(d){return capitalize(d.color) + ' cluster center'});
+	.append("svg:title")
+	.text(function(d){return capitalize(d.color) + ' cluster center'});
 }
 
 function moveCenters () {
