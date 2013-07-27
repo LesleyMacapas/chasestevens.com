@@ -16,9 +16,9 @@ _xmlhttp.onreadystatechange = function () {
         fetch_posts(_xmlhttp.responseText.split(','));
     }
 }
-_xmlhttp.open('GET', 'get_posts.php', true);
+_xmlhttp.open('GET', 'get_posts.php?limit=' + limit, true);
 _xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-_xmlhttp.send('limit=' + limit);
+_xmlhttp.send();
 
 function fetch_posts(post_ids) {
     var placeholders = "";
@@ -37,7 +37,7 @@ function populate_post(post_id) {
             div.outerHTML = _xmlhttp.responseText;
         }
     }
-    _xmlhttp.open('GET', 'get_blog_post.php', true);
+    _xmlhttp.open('GET', 'get_blog_post.php?time=' + post_id, true);
     _xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    _xmlhttp.send('time=' + post_id);
+    _xmlhttp.send();
 }
