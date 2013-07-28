@@ -82,8 +82,10 @@ $less_results_limit = max(($limit - 5), 0);
 </table>
 </center>
 </div>
-
 </div>
+</script>
+<script type="text/javascript">
+	 SyntaxHighlighter.all()
 </script>
 </body>
 </html>

@@ -40,4 +40,9 @@ function populate_post(post_id) {
     _xmlhttp.open('GET', 'get_blog_post.php?time=' + post_id, true);
     _xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     _xmlhttp.send();
+    
+    pre = document.evaluate('.//pre', div, null, XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null).iterateNext();
+    if (pre) {
+        pre.innerHTML = pre.innerHTML.split('<').join('&lt;')
+    }
 }
