@@ -1,6 +1,14 @@
 /* CSS Document */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather'), url(https://themes.googleusercontent.com/static/fonts/merriweather/v5/RFda8w1V0eDZheqfcyQ4EHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
 body {
-    font-family: Palatino Linotype, Book Antiqua;
+    font-family: 'Merriweather', Palatino Linotype, Book Antiqua;
     font-size: 13px;
 }
 
